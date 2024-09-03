@@ -1,0 +1,12 @@
+@import "../globals.scss";
+
+// Html, body.
+$app-padding: $global-padding-0;
+$app-margin: $global-margin-0;
+
+// App wrapper.
+$size-content-max-width: $global-app-max-width;
+$size-content-height: $global-app-height;
+$size-content-min-width: $global-app-min-width;
+$size-content-box-size: $global-box-size;
+$size-content-width: 100dvw;

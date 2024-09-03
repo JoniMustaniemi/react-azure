@@ -1,0 +1,7 @@
+@import "../../styles/sizes/sizes.scss";
+
+.header {
+  box-sizing: $size-content-box-size;
+  max-width: $size-content-max-width;
+  width: $size-content-width;
+}

@@ -1,0 +1,16 @@
+@import "../../styles/sizes/sizes.scss", "../../styles/positions/positions.scss",
+  "../../styles/fonts/fonts.scss";
+
+.appWrapper {
+  width: $size-content-width;
+  max-width: $size-content-max-width;
+  min-width: $size-content-min-width;
+  height: $size-content-height;
+  margin: $position-margin-center;
+  box-sizing: $size-content-box-size;
+  font-size: $size-content-font-size;
+}
+
+.appWrapper > * {
+  border: 1px solid white;
+}

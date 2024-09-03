@@ -1,0 +1,11 @@
+@import "./styles/colors/colors.scss", "./styles/behaviours/behaviours.scss",
+  "./styles/sizes/sizes.scss";
+
+html,
+body {
+  background-color: $app-background-color;
+  color: $app-text-color;
+  padding: $app-padding;
+  margin: $app-margin;
+  overflow: $behaviour-app-overflow;
+}
