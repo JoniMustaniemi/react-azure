@@ -7,7 +7,6 @@ import "./app.scss";
 function App() {
   return (
     <AppWrapper>
-      <Header />
       <Content />
     </AppWrapper>
   );
