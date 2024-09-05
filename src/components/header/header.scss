@@ -1,7 +1,11 @@
-@import "../../styles/sizes/sizes.scss";
+@import "../../styles/sizes/sizes.scss",
+  "../../styles/behaviours/behaviours.scss";
 
 .header {
   box-sizing: $size-content-box-size;
-  max-width: $size-content-max-width;
+  max-width: $size-header-width;
   width: $size-content-width;
+  display: $behaviour-flex;
+  justify-content: $behaviour-flex-end;
+  padding: $size-header-padding;
 }
