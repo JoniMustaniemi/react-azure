@@ -1,13 +1,29 @@
-import { useAuth } from "../../contexts/AuthContext.jsx";
+import Box from "@mui/material/Box";
+import Grid from "@mui/material/Grid2";
 import "./content.scss";
 
 const Content = () => {
-  const { loggedIn } = useAuth();
-
   return (
     <div className="contentWrapper">
-      <p>This is a template content component.</p>
-      <p>{loggedIn ? "Logged In" : "Logged Out"}</p>
+      <Box sx={{ flexGrow: 1 }}>
+        <Grid container>
+          <Grid className="grid carousel" size={12}>
+            CAROUSEL
+          </Grid>
+          <Grid className="grid" size={12}>
+            Section1
+          </Grid>
+          <Grid className="grid text" size={12}>
+            Section2
+          </Grid>
+          <Grid className="grid" size={12}>
+            Section3
+          </Grid>
+          <Grid className="grid text" size={12}>
+            Section4
+          </Grid>
+        </Grid>
+      </Box>
     </div>
   );
 };

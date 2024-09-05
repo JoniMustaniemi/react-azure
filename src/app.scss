@@ -3,9 +3,23 @@
 
 html,
 body {
-  background-color: $app-background-color;
   color: $app-text-color;
   padding: $app-padding;
   margin: $app-margin;
   overflow: $behaviour-app-overflow;
+  width: 100%;
+  overflow: auto;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: $app-background;
+  background-repeat: $behaviour-image-no-repeat;
+  background-size: $behaviour-image-cover;
+  z-index: -1;
 }

@@ -31,7 +31,7 @@ const LoginButton = () => {
     <Button
       onClick={handleLogin}
       variant="contained"
-      color={loggedIn ? "secondary" : "primary"}
+      color="primary"
     >
       {loggedIn ? "Log Out" : "Login"}
     </Button>

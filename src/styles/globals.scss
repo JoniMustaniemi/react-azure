@@ -2,12 +2,14 @@
 $global-gutter: 2.5%;
 $global-center: center;
 $global-white: white;
-$global-app-max-width: 600px;
+$global-black: rgba(0, 0, 0, 0.5);
+$global-app-max-width: 2560px;
 $global-app-min-width: fit-content;
-$global-app-height: 100dvh;
+$global-app-height: fit-content;
 $global-app-font-size: clamp(1rem, 2.5vw, 1.3rem);
 $global-margin-center: 0 auto;
 $global-padding-0: 0;
 $global-margin-0: 0;
 $global-box-size: border-box;
-$global-overflow-hidden: "hidden";
+$global-overflow-hidden: hidden;
+$global-border-radius: 10px;

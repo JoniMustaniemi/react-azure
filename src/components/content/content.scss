@@ -1,4 +1,4 @@
-@import "../../styles/sizes/sizes.scss";
+@import "../../styles/sizes/sizes.scss", "../../styles/colors/colors.scss";
 
 .contentWrapper > * {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -6,4 +6,26 @@
 
 .contentWrapper {
   height: $size-content-height;
+  background-color: $color-content-background;
+}
+
+.contentWrapper p {
+  margin: 0;
+}
+
+.grid {
+  height: 90vh;
+  border: 1px solid white;
+}
+
+.subGrid {
+  height: 100%;
+  border: 1px solid salmon;
+}
+
+.carousel {
+  height: 50vh;
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
 }

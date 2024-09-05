@@ -1,5 +1,5 @@
 @import "../../styles/sizes/sizes.scss",
-  "../../styles/behaviours/behaviours.scss";
+  "../../styles/behaviours/behaviours.scss", "../../styles/colors/colors.scss";
 
 .header {
   box-sizing: $size-content-box-size;
@@ -8,4 +8,5 @@
   display: $behaviour-flex;
   justify-content: $behaviour-flex-end;
   padding: $size-header-padding;
+  background-color: $color-header-background;
 }
