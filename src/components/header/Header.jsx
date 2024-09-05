@@ -1,5 +1,5 @@
 import "./header.scss";
-import LoginButton from "../loginButton/LogInButton";
+import LoginButton from "../loginButton/LogInButton.jsx";
 
 const Header = () => {
   return (

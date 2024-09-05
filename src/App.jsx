@@ -1,6 +1,6 @@
-import AppWrapper from "./components/appWrapper/AppWrapper";
-import Header from "./components/header/Header";
-import Content from "./components/content/Content";
+import AppWrapper from "./components/appWrapper/AppWrapper.jsx";
+import Header from "./components/header/Header.jsx";
+import Content from "./components/content/Content.jsx";
 import { useEffect } from "react";
 
 import "./app.scss";
