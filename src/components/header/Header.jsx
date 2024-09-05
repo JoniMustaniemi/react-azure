@@ -1,9 +1,12 @@
 import "./header.scss";
+import LoginButton from "../loginButton/LogInButton";
 
 const Header = () => {
   return (
     <div className="header">
-      <p>This is a template header component.</p>
+      <div className="loginButtonContainer">
+        <LoginButton />
+      </div>
     </div>
   );
 };
