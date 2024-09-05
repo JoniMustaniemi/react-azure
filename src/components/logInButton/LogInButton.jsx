@@ -1,6 +1,7 @@
 import { useMsal } from "@azure/msal-react";
 import { loginRequest } from "../../auth/authConfig.js";
 import { useAuth } from "../../contexts/AuthContext.jsx";
+import Button from "@mui/material/Button";
 
 const LoginButton = () => {
   const { instance } = useMsal();
@@ -9,8 +10,9 @@ const LoginButton = () => {
   const handleLogin = async () => {
     try {
       if (loggedIn) {
-        // Log the user out if currently logged in.
+        // Log the user out.
         await instance.logoutPopup();
+
         setLoggedIn(false);
       } else {
         // Log the user in if not logged in.
@@ -19,18 +21,21 @@ const LoginButton = () => {
         // Fetch access token.
         // await instance.acquireTokenPopup(loginRequest);
 
-        // Set logged status to true
         setLoggedIn(true);
       }
     } catch (error) {
       console.error("Error during authentication", error);
     }
   };
-
   return (
-    <button onClick={handleLogin}>
-      {loggedIn ? "Log Out" : "Login with Azure AD"}
-    </button>
+    <Button
+      onClick={handleLogin}
+      variant="contained"
+      color={loggedIn ? "secondary" : "primary"}
+      sx={{ mt: 2 }}
+    >
+      {loggedIn ? "Log Out" : "Login"}
+    </Button>
   );
 };
 

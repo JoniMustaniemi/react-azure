@@ -1,5 +1,9 @@
 @import "../../styles/sizes/sizes.scss";
 
+.contentWrapper > * {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .contentWrapper {
   height: $size-content-height;
 }
