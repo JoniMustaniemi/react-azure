@@ -18,9 +18,6 @@ const LoginButton = () => {
         // Log the user in if not logged in.
         await instance.loginPopup(loginRequest);
 
-        // Fetch access token.
-        // await instance.acquireTokenPopup(loginRequest);
-
         setLoggedIn(true);
       }
     } catch (error) {
@@ -31,7 +28,14 @@ const LoginButton = () => {
     <Button
       onClick={handleLogin}
       variant="contained"
-      color="primary"
+      color="secondary"
+      size="large"
+      sx={{
+        position: "absolute",
+        top: "2%",
+        right: "3%",
+        zIndex: 2,
+      }}
     >
       {loggedIn ? "Log Out" : "Login"}
     </Button>

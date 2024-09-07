@@ -1,8 +1,6 @@
-// import "./example.scss";
-
 const TemplateComponent = () => {
   return (
-    <div className="header">
+    <div>
       <p>This is a template React component.</p>
     </div>
   );

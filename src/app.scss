@@ -1,12 +1,9 @@
-@import "./styles/colors/colors.scss", "./styles/behaviours/behaviours.scss",
-  "./styles/sizes/sizes.scss";
-
 html,
 body {
-  color: $app-text-color;
-  padding: $app-padding;
-  margin: $app-margin;
-  overflow: $behaviour-app-overflow;
+  color: white;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
   width: 100%;
 }
 
@@ -17,8 +14,8 @@ body::before {
   left: 0;
   right: 0;
   bottom: 0;
-  background: $app-background;
-  background-repeat: $behaviour-image-no-repeat;
-  background-size: $behaviour-image-cover;
+  background: url("./assets/app_background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   z-index: -1;
 }

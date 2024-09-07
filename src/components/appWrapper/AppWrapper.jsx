@@ -1,8 +1,8 @@
 import PropTypes from "prop-types";
-import "./appwrapper.scss";
+import { Box } from "@mui/material";
 
 const AppWrapper = ({ children }) => {
-  return <div className="appWrapper">{children}</div>;
+  return <Box>{children}</Box>;
 };
 
 AppWrapper.propTypes = {

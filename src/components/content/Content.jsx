@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { getItems } from "../../utils/utils.jsx";
-import Header from "../header/Header.jsx";
 import Box from "@mui/material/Box";
 import { Button } from "@mui/material";
 import Grid from "@mui/material/Grid2";
@@ -35,7 +34,6 @@ const Content = () => {
         overflowY: "scroll",
       }}
     >
-      <Header />
       <Box sx={{ flexGrow: 1 }}>
         <Grid container>
           {items.map((item, index) => {
@@ -79,9 +77,9 @@ const Content = () => {
                     <Box
                       sx={{
                         padding: 5,
-                        fontSize: "1.5rem",
-                        width: "50%",
-                        margin: "0 auto",
+                        width: "fit-content",
+                        maxWidth: "50%",
+                        marginLeft: "20%",
                         height: "inherit",
                         backgroundColor: "rgba(0, 0, 0, 0.5)",
                         display: "flex",
@@ -91,8 +89,18 @@ const Content = () => {
                         textShadow: "0 6px 6px #000000, 0 -2px 1px #000000",
                       }}
                     >
-                      <Box component="h1">{item.title}</Box>
-                      <Box component="p">{item.description}</Box>
+                      <Box
+                        component="h1"
+                        sx={{ fontSize: "clamp(1rem, 2.5vw, 3.5rem)" }}
+                      >
+                        {item.title}
+                      </Box>
+                      <Box
+                        component="p"
+                        sx={{ fontSize: "clamp(1rem, 1.2vw, 3.5rem)" }}
+                      >
+                        {item.description}
+                      </Box>
 
                       <Box
                         sx={{
@@ -101,7 +109,14 @@ const Content = () => {
                           width: "100%",
                         }}
                       >
-                        <Button variant="contained" color="secondary">
+                        <Button
+                          variant="contained"
+                          color="secondary"
+                          sx={{
+                            width: "fit-content",
+                            fontSize: "clamp(1rem, 1vw, 3.5rem)",
+                          }}
+                        >
                           Preorder now
                         </Button>
                       </Box>
