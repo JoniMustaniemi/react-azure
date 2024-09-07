@@ -1,7 +1,6 @@
 export const getItems = async () => {
   try {
-    const apiUrl = import.meta.env.VITE_BASE_URL || "http://localhost:5173";
-    const response = await fetch(`${apiUrl}/api/items`);
+    const response = await fetch("/api/items");
     if (!response.ok) {
       throw new Error("Network response was not ok");
     }
